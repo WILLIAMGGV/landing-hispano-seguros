@@ -19,3 +19,57 @@
 .mont-bold {
   font-family: var(--font-mont-bold), sans-serif;
 }
+
+
+
+
+.fondo-banner {
+  background-image: url('/images/banner.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fondo-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(13, 27, 42, 0.7); /* azul oscuro con transparencia */
+  z-index: 0;
+}
+
+.fondo-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.banner-shape {
+  border-bottom-left-radius: 100% 20%;
+  border-bottom-right-radius: 100% 20%;
+}
+
+@media (min-width: 768px) {
+  .banner-shape {
+    border-bottom-left-radius: 100% 40%;
+    border-bottom-right-radius: 100% 40%;
+  }
+}
+
+@keyframes moverArribaAbajo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animacion-arriba-abajo {
+  animation: moverArribaAbajo 1.5s ease-in-out infinite;
+}
