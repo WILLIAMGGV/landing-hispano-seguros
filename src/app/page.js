@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Menus from "./componentes/menus";
 import AccordionSeguros from "./componentes/accordionseguros";
+import { Banner2 } from "./componentes/banner2";
 
 export default function Home() {
   return (
@@ -20,12 +21,16 @@ export default function Home() {
         </p>
       </div>
       <br />
-      <div className="grid grid-cols-[40%_40%] justify-center gap-4">
-        <div className="bg-gray-200 p-4 rounded">
-          <p>Columna 1</p>
+      <div className="grid grid-cols-1 md:grid-cols-[40%_40%] justify-center gap-4">
+        <div className="p-4 rounded flex flex-col place-content-center justify-center items-center">
+          <img src="/images/nuestros.png" className="w-[70%] md:w-full" />
+          <div className="text-2xl ml-8 mont-bold text-white p-4 bg-[var(--azul-claro)] shadow-[8px_8px_10px_rgba(0,0,0,0.7)] transition-colors duration-300 ease-in-out cursor-pointer hover:bg-[var(--azul-oscuro)]">
+            Más Información
+          </div>
         </div>
         <AccordionSeguros />
       </div>
+      <Banner2 />
     </>
   );
 }
