@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import { CustomProvider } from "rsuite";
 import "rsuite/dist/rsuite-no-reset.min.css";
 import "./globals.css";
@@ -43,6 +44,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        src="https://static.elfsight.com/platform/platform.js"
+        strategy="lazyOnload"
+      />
       <body
         className={`${MontRegular.variable} ${MontBold.variable} ${MontBlack.variable} antialiased`}
       >

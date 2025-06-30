@@ -3,6 +3,10 @@ import Image from "next/image";
 import Menus from "./componentes/menus";
 import AccordionSeguros from "./componentes/accordionseguros";
 import { Banner2 } from "./componentes/banner2";
+import { Testimonios } from "./componentes/testimonios";
+import { Preguntas } from "./componentes/preguntas";
+import { Formcontact } from "./componentes/formcontact";
+import { Footer } from "./componentes/footer";
 
 export default function Home() {
   return (
@@ -31,6 +35,14 @@ export default function Home() {
         <AccordionSeguros />
       </div>
       <Banner2 />
+      <br />
+      <Testimonios />
+      <br />
+      <Preguntas />
+      <div className="pt-[0px] sm:pt-[50px] ml-[3%] mr-[3%] md:ml-[10%] md:mr-[10%] flex flex-col place-content-center justify-center items-center">
+        <Formcontact />
+      </div>
+      <Footer />
     </>
   );
 }
