@@ -75,11 +75,15 @@ export const Footer = () => {
     
   </div>
   <div className='bg-[var(--azul-claro)] w-full'>
-    <div className='flex flex-row place-content-center justify-center items-center text-white mont-regular p-2'>
+    <div className='flex flex-col text-[14px] sm:text-xl sm:flex-row place-content-center justify-center items-center text-white mont-regular p-2'>
+      <div className='flex flex-row place-content-center items-center justify-center'>
       <img src="/images/map.png" width="20px" alt="" />
       <span className='ml-2'> 85 NE Loop 410 Suite 624, San Antonio, TX 78216</span>
+      </div>
+      <div className='flex flex-row place-content-center items-center justify-center'>
       <img src="/images/mail.png"  className='ml-2'  width="20px" alt="" />
       <span className='ml-2'>ayuda@hispanoseguro.com</span>
+      </div>
     </div>
   </div>
   <br />
