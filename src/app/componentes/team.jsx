@@ -284,11 +284,11 @@ const obtenerdata = (id, tipo) => {
     style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     onClick={() => setModal(false)}
   >
-    <div onClick={(e) => e.stopPropagation()} className="relative bg-white rounded-lg shadow-lg max-w-2xl w-full transform transition-all duration-300 opacity-0 scale-95 animate-fade-in">
+    <div onClick={(e) => e.stopPropagation()} className="relative bg-white rounded-lg shadow-lg sm:max-w-2xl w-[80%] transform transition-all duration-300 opacity-0 scale-95 animate-fade-in">
       {/* Modal Header */}
       <button
           onClick={() => setModal(false)}
-          className="absolute mt-[-20px] mr-[-20px] cursor-pointer top-0 right-0 text-white hover:text-gray-900 rounded-full bg-[var(--azul-oscuro)] p-2"
+          className="absolute mt-[-20px] mr-[-20px] z-100 cursor-pointer top-0 right-0 text-white hover:text-gray-900 rounded-full bg-[var(--azul-oscuro)] p-2"
         >
           ✖
         </button>
@@ -296,40 +296,42 @@ const obtenerdata = (id, tipo) => {
       
       
 
-      <div className="grid grid-cols-[40%_60%] w-full rounded-lg">
-  <div className="bg-[var(--azul-oscuro)] rounded-l-lg p-2">
-    <div className='flex flex-col place-content-start items-center justify-start'>
-      <img src={obtenerdata(id, "photo")} width="100%" className='rounded-lg'  />
+      <div className="grid grid-cols-1 md:grid-cols-[40%_60%] w-full rounded-lg">
+  
+  {/* Columna 1 - Foto y contacto */}
+  <div className="bg-[var(--azul-oscuro)] rounded-t-lg md:rounded-l-lg md:rounded-tr-none p-2">
+    <div className="flex flex-col items-center">
+      <img src={obtenerdata(id, "photo")} width="100%" className="rounded-lg w-[50%] sm:w-full" />
 
-      <div className='flex flew-row mt-4'>
-        <svg className="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z"/>
-</svg>
-<span className='mont-bold text-[var(--azul-claro)] '>{obtenerdata(id, "phone")}</span>
-
+      <div className="flex flex-row mt-4 items-center space-x-2">
+        <svg className="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
+        </svg>
+        <span className="mont-bold text-[var(--azul-claro)] text-[10px] sm:text-xs">{obtenerdata(id, "phone")}</span>
       </div>
 
-      <div className='flex flew-row items-center'>
-        <svg className="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"/>
-  <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"/>
-</svg>{" "}
-
-<span className='mont-bold text-[var(--azul-claro)] text-[10px]'>{obtenerdata(id, "email")}</span>
-
+      <div className="flex flex-row items-center mt-0 sm:mt-4 space-x-2">
+        <svg className="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
+          <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
+        </svg>
+        <span className="mont-bold text-[var(--azul-claro)] text-[10px] sm:text-xs">{obtenerdata(id, "email")}</span>
       </div>
     </div>
   </div>
-  <div className=" rounded-r-lg p-4 relative">
-    <div className='flex flex-col z-30'>
-      <span className='mont-bold text-xl text-[var(--azul-oscuro)]'>{obtenerdata(id, "name")}</span>
-      <span className='mont-regular text-lg italic text-[var(--azul-claro)]'>{obtenerdata(id, "title")}</span>
+
+  {/* Columna 2 - Datos y descripción */}
+  <div className="bg-white rounded-b-lg md:rounded-r-lg md:rounded-bl-none p-4 relative">
+    <div className="flex flex-col z-30">
+      <span className="mont-bold text-lg sm:text-xl text-[var(--azul-oscuro)]">{obtenerdata(id, "name")}</span>
+      <span className="mont-regular text-md sm:text-lg italic text-[var(--azul-claro)]">{obtenerdata(id, "title")}</span>
       <br />
-      <p className='mont-regular' style={{textAlign: 'justify'}} dangerouslySetInnerHTML={{ __html: obtenerdata(id, "description") }}></p>
+      <p className="mont-regular text-sm sm:text-md text-justify" dangerouslySetInnerHTML={{ __html: obtenerdata(id, "description") }}></p>
     </div>
-    <img src="/images/logo4.png" width="200px" height="200px" style={{opacity: '0.4'}} className='z-10 absolute bottom-0 right-0' />
+    <img src="/images/logo4.png" style={{ opacity: "0.4" }} className="z-10 absolute bottom-0 right-0 w-[100px] h-[100px] sm:w-[200px] sm:h-[200px]" />
   </div>
 </div>
+
     </div>
   </div>
 )}
