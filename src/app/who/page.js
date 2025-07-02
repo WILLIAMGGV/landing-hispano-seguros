@@ -10,6 +10,7 @@ import { Footer } from "../componentes/footer";
 import Banner from "../componentes/banner";
 import Mision from "../componentes/mision";
 import Team from "../componentes/team";
+import { Formcontact2 } from "../componentes/formcontact2";
 
 export default function Home() {
   return (
@@ -38,6 +39,10 @@ export default function Home() {
       <Mision />
       <br />
       <Team />
+      <br />
+      <div className="pt-[0px] sm:pt-[50px] ml-[3%] mr-[3%] md:ml-[10%] md:mr-[10%] flex flex-col place-content-center justify-center items-center">
+        <Formcontact2 />
+      </div>
       <Footer />
     </>
   );

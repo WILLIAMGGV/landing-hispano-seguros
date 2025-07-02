@@ -8,6 +8,10 @@
   --gris: #AAAAAA;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mont-regular {
   font-family: var(--font-mont-regular), sans-serif;
 }
@@ -229,4 +233,20 @@
 
 .contenedor-imagen:hover .imagen {
   transform: scale(1.05); /* Ajusta el valor según el agrandamiento que desees */
+}
+
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInScale 0.3s ease-out forwards;
 }

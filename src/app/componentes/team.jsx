@@ -1,48 +1,211 @@
+"use client"
 import React from 'react'
 
+
+
+
 const Team = () => {
+
+  const data = [
+  {
+    "id": 1,
+    "name": "Jonathan Barreto",
+    "photo": "/images/team/lider.jpg",
+    "title": "Gerente Operaciones - Oficina Austin",
+    "description": "Enfocado a los detalles, Jonathan es tu experto en seguros de auto y hogar, además de ser un especialista en seguros de salud, vida y Medicare. Se asegura que cada cliente comprenda su cobertura y se sienta completamente protegido. <strong>Si buscas tranquilidad y claridad para tu auto y hogar, contacta a Javier.</strong>",
+    "email": "jonathanbarreto@hispanoseguro.com",
+    "phone": "(786) 820-5627",
+  },
+  {
+    "id": 2,
+    "name": "Johanna Rivero",
+    "photo": "/images/team/johanna1.jpg",
+    "title": "Agente de Seguros",
+    "description": "Con una trayectoria sólida en el ámbito de los seguros de salud y vida, Johanna es un asesor confiable para familias y profesionales. Su compromiso con la excelencia aseguran que cada póliza se adapte perfectamente a tus requisitos. Para una protección integral en salud y vida, comunícate con Fernando.",
+    "email": "ayuda@hispanoseguro.com",
+    "phone": "(512) 851-7728",
+  },
+  {
+    "id": 3,
+    "name": "Jose Humberto Ramirez",
+    "photo": "/images/team/jose1.jpg",
+    "title": "CMO",
+    "description": "Liderando nuestros esfuerzos para conectar con ustedes y compartir cómo Hispano Seguros puede proteger lo que más te importa. Especilista en seguros de Salud y Vida.",
+    "email": "josehramirez@hispanoseguro.com",
+    "phone": "210-760-7207",
+  },
+  {
+    "id": 4,
+    "name": "Mildred Lopez",
+    "photo": "/images/team/mildred1.jpg",
+    "title": "CEO",
+    "description": "Con mas de 9 años de experiencia en el mundo de los seguros. Fundadora de Hispano Seguros, enfocada de servir a nuestra comunidad Hispana en Estados Unidos.",
+    "email": "mildredlopez@hispanoseguro.com",
+    "phone": "(210) 876-3360",
+  },
+  {
+    "id": 5,
+    "name": "Carolina Baladi",
+    "photo": "/images/team/carolina1.jpg",
+    "title": "Agente de Seguros",
+    "description": "Especialista en seguros de salud y vida. Su empatía y conocimiento técnico la convierten en una aliada invaluable para proteger lo que más te importa.<strong> ¡Habla hoy con Sofía para un futuro más seguro!</strong>",
+    "email": "ayuda@hispanoseguro.com",
+    "phone": "(573) 631-9390",
+  },
+  {
+    "id": 6,
+    "name": "Ninoska Colmenares",
+    "photo": "/images/team/ninoska1.jpg",
+    "title": "Gerente General - Oficina Austin",
+    "description": "Destacandose por su compromiso y su profundo conocimiento en Medicare, además de ser especialista en seguros de salud y vida. Ella te guiará a través de las complejidades de Medicare para asegurar que obtengas la cobertura que necesitas. Deja que Ninoska te ayude a navegar por Medicare y asegurar tu bienestar.",
+    "email": "ninoskacolmenares@hispanoseguro.com",
+    "phone": "(786) 506-5217",
+  },
+  {
+    "id": 7,
+    "name": "Isari Pereira",
+    "photo": "/images/team/isarys1.jpg",
+    "title": "Agente de Seguros",
+    "description": "Conocida por su energía y su dedicación a encontrar las mejores opciones en Medicare, así como en seguros de salud y vida. Siempre está dispuesta a ir más allá para garantizar tu cobertura y ayudarte a entender tus beneficios. <strong>¡Descubre cómo Ricardo puede simplificar tus decisiones de Medicare!</strong>",
+    "email": "ayuda@hispanoseguro.com",
+    "phone": "(512) 679-1888",
+  },
+  {
+    "id": 8,
+    "name": "Omar Rivero",
+    "photo": "/images/team/omar1.jpg",
+    "title": "Director General - Oficina Austin",
+    "description": "Omar es un agente apasionado con más de 10 años de experiencia, especialista en seguros de salud, vida y anualidades. Su empatía y conocimiento técnico la convierten en un aliado invaluable para proteger lo que más te importa. <strong> ¡Habla hoy con Omar para un futuro más seguro! </strong>",
+    "email": "omarrivero@hispanoseguro.com",
+    "phone": "(512) 966-8764",
+  },
+  {
+    "id": 9,
+    "name": "Brigitte Avila",
+    "photo": "/images/team/brigitte1.jpg",
+    "title": "Agente de Seguros",
+    "description": "Mariana es una experta en seguros de salud y vida. Entiende las dinámicas cambiantes de la vida y ofrece soluciones flexibles que se adaptan a cada etapa. <strong>¡Descubre cómo Mariana puede simplificar tus decisiones de seguro de salud y vida!</strong>",
+    "email": "ayuda@hispanoseguro.com",
+    "phone": "(737) 707-5294",
+  },
+   {
+    "id": 10,
+    "name": "Carla Ramirez",
+    "photo": "/images/team/carla1.jpg",
+    "title": "Agente de Seguros",
+    "description": "Tu experta en seguros de salud y vida. Su enfoque y conocimiento de nuestros productos la convierten en una aliada invaluable para proteger lo que más te importa. <strong>¡Habla hoy con Sofía para un futuro más seguro!</strong>",
+    "email": "ayuda@hispanoseguro.com",
+    "phone": "(210) 388-3044",
+  },
+
+
+]
+
+  const [modal, setModal] = React.useState(false)
+  const [id, setId] = React.useState(1)
+
+
+
+const obtenerdata = (id, tipo) => {
+
+  console.log(id)
+
+  for (let i = 0; i < data.length; i++) {
+      if(id==data[i].id){
+        if(tipo == "name"){
+          return data[i].name
+        }
+        if(tipo == "photo"){
+          return data[i].photo
+          }
+          if(tipo == "title"){
+            return data[i].title
+            }
+            if(tipo == "description"){
+              return data[i].description
+              }
+              if(tipo == "email"){
+                return data[i].email
+                }
+                if(tipo == "phone"){
+                  return data[i].phone
+                }
+      }
+  }
+
+
+}
+
+
   return (<>
     <div className='flex flex-col mont-regular place-content-center items-center justify-center   leading-none'>
-      <span className='text-[180px] text-[var(--azul-oscuro)]'>Conoce</span>
-      <span className='text-[90px] text-[var(--azul-oscuro)] mt-[-40px]'>a nuestro equipo</span>
+      <span className='text-[50px] md:text-[180px] text-[var(--azul-oscuro)]'>Conoce</span>
+      <span className='text-[40px] md:text-[90px] text-[var(--azul-oscuro)] mt-[0px] md:mt-[-40px]'>a nuestro equipo</span>
     </div>
     <br /><br />
     <div className='flex flex-col place-content-center items-center justify-center' >
     <div className='w-[90%] bg-[#e9e9e9] rounded-4xl flex flex-col p-6 pt-12'>
     <div className="grid gap-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
   
-  <div class="contenedor-imagen">
-  <img src="/images/team/lider.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer" onClick={() => {
+  setModal(true);
+  setId(1);
+  }}>
+  <img src="/images/team/lider.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Jonathan Barreto</span>
+  </div>
 </div>
 
-  <div class="contenedor-imagen">
-  <img src="/images/team/johanna1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(2);
+  }}>
+  <img src="/images/team/johanna1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Johanna Rivero</span>
+  </div>
 </div>
 
-  <div class="contenedor-imagen">
-  <img src="/images/team/jose1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(3);
+  }}>
+  <img src="/images/team/jose1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Jose Humberto Ramirez</span>
+  </div>
 </div>
 
 </div>
 
 <div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(2, 30%)", justifyContent: "center" }}>
   
-  <div class="contenedor-imagen">
-  <img src="/images/team/mildred1.jpg" class="imagen" />
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(4);
+  }}>
+  <img src="/images/team/mildred1.jpg" className="imagen" />
   
-  <div class="overlay"></div>
+  <div className="overlay"></div>
   
-  <div class="etiqueta-nombre hidden hover:block">
+  <div className="etiqueta-nombre hidden hover:block">
     <span>Mildred Lopez</span>
   </div>
 </div>
 
-  <div class="contenedor-imagen">
-  <img src="/images/team/carolina1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(5);
+  }}>
+  <img src="/images/team/carolina1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Carolina Baladi</span>
+  </div>
 </div>
 
 
@@ -50,33 +213,63 @@ const Team = () => {
 
 <div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
   
-  <div class="contenedor-imagen">
-  <img src="/images/team/ninoska1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(6);
+  }}>
+  <img src="/images/team/ninoska1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Ninoska Colmenares</span>
+  </div>
 </div>
 
-  <div class="contenedor-imagen">
-  <img src="/images/team/isarys1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(7);
+  }}>
+  <img src="/images/team/isarys1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Isari Pereira</span>
+  </div>
 </div>
 
-  <div class="contenedor-imagen">
-  <img src="/images/team/omar1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(8);
+  }}>
+  <img src="/images/team/omar1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Omar Rivero</span>
+  </div>
 </div>
 
 </div>
 
 <div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(2, 30%)", justifyContent: "center" }}>
   
-  <div class="contenedor-imagen">
-  <img src="/images/team/brigitte1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(9);
+  }}>
+  <img src="/images/team/brigitte1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Brigitte Avila</span>
+  </div>
 </div>
 
-  <div class="contenedor-imagen">
-  <img src="/images/team/carla1.jpg" class="imagen" />
-  <div class="overlay"></div>
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(10);
+  }}>
+  <img src="/images/team/carla1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Carla Ramirez</span>
+  </div>
 </div>
 
 
@@ -84,6 +277,64 @@ const Team = () => {
 
     </div>
     </div>
+
+{modal && (
+  <div
+    className="fixed inset-0 z-50 flex items-center justify-center"
+    style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+    onClick={() => setModal(false)}
+  >
+    <div onClick={(e) => e.stopPropagation()} className="relative bg-white rounded-lg shadow-lg max-w-2xl w-full transform transition-all duration-300 opacity-0 scale-95 animate-fade-in">
+      {/* Modal Header */}
+      <button
+          onClick={() => setModal(false)}
+          className="absolute mt-[-20px] mr-[-20px] cursor-pointer top-0 right-0 text-white hover:text-gray-900 rounded-full bg-[var(--azul-oscuro)] p-2"
+        >
+          ✖
+        </button>
+      
+      
+      
+
+      <div className="grid grid-cols-[40%_60%] w-full rounded-lg">
+  <div className="bg-[var(--azul-oscuro)] rounded-l-lg p-2">
+    <div className='flex flex-col place-content-start items-center justify-start'>
+      <img src={obtenerdata(id, "photo")} width="100%" className='rounded-lg'  />
+
+      <div className='flex flew-row mt-4'>
+        <svg className="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z"/>
+</svg>
+<span className='mont-bold text-[var(--azul-claro)] '>{obtenerdata(id, "phone")}</span>
+
+      </div>
+
+      <div className='flex flew-row items-center'>
+        <svg className="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"/>
+  <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"/>
+</svg>{" "}
+
+<span className='mont-bold text-[var(--azul-claro)] text-[10px]'>{obtenerdata(id, "email")}</span>
+
+      </div>
+    </div>
+  </div>
+  <div className=" rounded-r-lg p-4 relative">
+    <div className='flex flex-col z-30'>
+      <span className='mont-bold text-xl text-[var(--azul-oscuro)]'>{obtenerdata(id, "name")}</span>
+      <span className='mont-regular text-lg italic text-[var(--azul-claro)]'>{obtenerdata(id, "title")}</span>
+      <br />
+      <p className='mont-regular' style={{textAlign: 'justify'}} dangerouslySetInnerHTML={{ __html: obtenerdata(id, "description") }}></p>
+    </div>
+    <img src="/images/logo4.png" width="200px" height="200px" style={{opacity: '0.4'}} className='z-10 absolute bottom-0 right-0' />
+  </div>
+</div>
+    </div>
+  </div>
+)}
+
+
     </>
   )
 }

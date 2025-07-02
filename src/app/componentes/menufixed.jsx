@@ -51,8 +51,8 @@ const Menufixed = () => {
         {/* Menú Desktop */}
         {/* Menú Desktop con submenú */}
         <div className="hidden sm:flex bg-[var(--azul-oscuro)] h-[60px] w-full mont-regular text-white text-2xl items-center justify-center relative">
-          <span className="mx-4 cursor-pointer">Inicio</span>
-          <span className="mx-4 cursor-pointer">Sobre Nosotros</span>
+          <a href="/"><span className="mx-4 cursor-pointer">Inicio</span></a>
+          <a href="/who"><span className="mx-4 cursor-pointer">Sobre Nosotros</span></a>
 
           {/* Grupo con hover para submenú */}
           <div className="relative group mx-4 cursor-pointer flex items-center gap-1">
@@ -65,27 +65,32 @@ const Menufixed = () => {
             {/* Submenú desplegable */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-56 bg-white text-[var(--azul-oscuro)] text-base rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-20">
               <div className="flex flex-col py-2 px-4 space-y-2">
-                <span className="hover:text-[var(--azul-claro)] cursor-pointer">
+                <a href="/services#salud"><span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro de Salud
-                </span>
-                <span className="hover:text-[var(--azul-claro)] cursor-pointer">
+                </span></a>
+                <a href="/services#vida"><span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro de Vida
-                </span>
-                <span className="hover:text-[var(--azul-claro)] cursor-pointer">
+                </span></a>
+                <a href="/services#auto"><span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro de Auto
                 </span>
-                <span className="hover:text-[var(--azul-claro)] cursor-pointer">
+                </a>
+                <a href="/services#dental"><span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro Dental
                 </span>
+                </a>
+                <a href="/services#vision">
                 <span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro de Visión
-                </span>
+                </span></a>
+                <a href="/services#internacional">
                 <span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro Internacional
-                </span>
+                </span></a>
+                <a href="/services#gastos">
                 <span className="hover:text-[var(--azul-claro)] cursor-pointer">
                   Seguro de Últimos Gastos
-                </span>
+                </span></a>
               </div>
             </div>
           </div>
@@ -108,8 +113,12 @@ const Menufixed = () => {
               : "opacity-0 -translate-y-5 scale-95 pointer-events-none"
           }`}
         >
-          <span onClick={() => setOpen(false)}>Inicio</span>
-          <span onClick={() => setOpen(false)}>Sobre Nosotros</span>
+          <a href="/"><span onClick={() => { setOpen(false);
+            window.location.href = "/";
+          }}>Inicio</span></a>
+          <a href="/who"><span onClick={() => { setOpen(false);
+            window.location.href = "/who";
+          }}>Sobre Nosotros</span></a>
 
           {/* Toggle de submenú */}
           <div className="w-full flex flex-col items-center">
@@ -131,27 +140,36 @@ const Menufixed = () => {
                 subOpen ? "max-h-50 opacity-100" : "max-h-0 opacity-0"
               } flex flex-col items-center space-y-2 mt-2`}
             >
-              <span className="text-sm" onClick={() => setOpen(false)}>
+              <a href="/services#salud"><span className="text-sm" onClick={() => {
+               
+                setOpen(false);
+              }}>
                 Seguro de Salud
-              </span>
-              <span className="text-sm" onClick={() => setOpen(false)}>
+              </span></a>
+              <a href="/services#vida"><span className="text-sm" onClick={() => setOpen(false)}>
                 Seguro de Vida
-              </span>
-              <span className="text-sm" onClick={() => setOpen(false)}>
+              </span></a>
+              <a href="/services#auto"><span className="text-sm" onClick={() => setOpen(false)}>
                 Seguro de Auto
-              </span>
-              <span className="text-sm" onClick={() => setOpen(false)}>
+              </span></a>
+              
+              <a href="/services#dental"><span className="text-sm" onClick={() => setOpen(false)}>
                 Seguro Dental
-              </span>
+              </span></a>
+              <a href="/services#vision">
               <span className="text-sm" onClick={() => setOpen(false)}>
                 Seguro de Visión
               </span>
+              </a>
+              <a href="/services#internacional">
               <span className="text-sm" onClick={() => setOpen(false)}>
                 Seguro Internacional
               </span>
+              </a>
+              <a href="/services#gastos">
               <span className="text-sm" onClick={() => setOpen(false)}>
                 Seguro de Últimos Gastos
-              </span>
+              </span></a>
             </div>
           </div>
 

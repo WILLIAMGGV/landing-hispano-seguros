@@ -80,9 +80,7 @@ export const Preguntas = () => {
       </div>
 
       <div className='hidden sm:block'>
-<div className=' p-8 bg-[var(--azul-oscuro)] text-5xl w-full shadow-[0_8px_20px_rgba(0,0,0,0.7)]'>
-    <img src="/images/preguntasf.png" width="60%" className='ml-16' alt="" />
-</div>
+
 <br /><br />
 
 <div className="hidden md:block menu place-content-center items-center justify-center">
