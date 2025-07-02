@@ -18,16 +18,16 @@ export const Footer = () => {
     
     {/* Logo */}
     <div className="p-4 flex justify-center sm:justify-start">
-      <img src="/images/logo3.png" alt="Logo" className="w-[250px]" />
+      <a href="/"><img src="/images/logo3.png" alt="Logo" className="w-[250px]" /></a>
     </div>
 
     {/* Enlaces de navegación */}
     <div className="p-4 text-white text-base mont-regular">
       <div className='flex flex-col items-start space-y-2'>
-        <span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Inicio</span>
-        <span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Sobre Nosotros</span>
-        <span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Nuestros servicios</span>
-        <span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Contacto</span>
+        <a href="/"><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Inicio</span></a>
+        <a href="/who"><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Sobre Nosotros</span></a>
+        <a href="/services"><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Nuestros servicios</span></a>
+        <a href=""><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Contacto</span></a>
       </div>
     </div>
 

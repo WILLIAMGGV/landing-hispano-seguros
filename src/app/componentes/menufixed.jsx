@@ -18,7 +18,7 @@ const Menufixed = () => {
             clipPath: "polygon(0 0, 65% 0, 100% 100%, 0% 100%)",
           }}
         >
-          <img src="/images/logo.png" width="200px" />
+          <a href="/"><img src="/images/logo.png" width="200px" /></a>
         </div>
 
         {/* Barra superior */}

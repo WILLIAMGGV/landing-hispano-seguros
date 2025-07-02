@@ -28,7 +28,7 @@ export default function AccordionSeguros() {
 >
           <button
             onClick={() => toggle(index)}
-            className="w-full text-center bg-[var(--azul-oscuro)] text-white mont-bold text-[22px] p-4 rounded-2xl shadow-2xl transition-all duration-300"
+            className="w-full text-center bg-[var(--azul-oscuro)] text-white mont-bold text-[18px] md:text-[22px] p-4 rounded-2xl shadow-2xl transition-all duration-300"
           >
             {seguro.titulo}
           </button>
@@ -43,7 +43,7 @@ export default function AccordionSeguros() {
                 className="overflow-hidden"
               >
                 <div
-  className="bg-white text-center text-[var(--azul-oscuro)] p-4 mt-[-10px] rounded-xl"
+  className="bg-white text-center text-[14px] md:text-[16px] text-[var(--azul-oscuro)] p-4 mt-[-10px] rounded-xl"
   dangerouslySetInnerHTML={{ __html: seguro.descripcion }}
 ></div>
               </motion.div>

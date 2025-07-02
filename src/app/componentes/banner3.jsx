@@ -23,27 +23,27 @@ export default function Banner3() {
 <div className="flex flex-col sm:flex-row place-content-center items-center justify-center">
 
 
-           <div className="flex flex-col place-content-start mt-0 sm:mt-[-50px]  leading-none">
+           <div className="flex flex-col place-content-start mt-[-30px] sm:mt-[-50px]  leading-none">
             <span className="text-[#95a8d0] text-[40px] sm:text-[90px] ">Nuestros</span>
-            <span className="text-[var(--azul-oscuro)] text-[60px] sm:text-[110px] mt-[-20px]">Servicios</span>
+            <span className="text-[var(--azul-oscuro)] text-[50px] sm:text-[110px] mt-[-10px] sm:mt-[-20px]">Servicios</span>
         </div>
 
         <div className="ml-4 grid grid-cols-[repeat(1,80%)] sm:grid-cols-[repeat(3,33%)] w-[100%] place-content-center items-center justify-center">
   <div className=" flex flex-col place-content-center items-center justify-center">
-    <img src="/images/services/op1.png" className="w-[30%] sm:w-full h-[100px] sm:h-[200px] p-2" />
+    <img src="/images/services/op1.png" className="w-[30%] sm:w-full h-[60px] sm:h-[200px] p-2" />
 
-<div className="text-[var(--azul-oscuro)] flex flex-col place-content-center items-center justify-center text-lg sm:text-2xl"><span>Planes </span> <span className="ml-2 sm:ml-0">Personalizados</span></div>
+<div className="text-[var(--azul-oscuro)] flex flex-col place-content-center items-center justify-center text-sm sm:text-2xl"><span>Planes </span> <span className="ml-2 sm:ml-0">Personalizados</span></div>
 
     
   </div>
   <div className="  flex flex-col place-content-center items-center justify-center">
-    <img src="/images/services/op2.png" className="w-[30%] sm:w-full h-[100px] sm:h-[200px] p-2" />
-    <div className="text-[var(--azul-oscuro)] flex flex-col place-content-center items-center justify-center text-lg sm:text-2xl"><span>Innovación en</span> <span className="ml-2 sm:ml-0">nuestros servicios</span></div>
+    <img src="/images/services/op2.png" className="w-[30%] sm:w-full h-[60px] sm:h-[200px] p-2" />
+    <div className="text-[var(--azul-oscuro)] flex flex-col place-content-center items-center justify-center text-sm sm:text-2xl"><span>Innovación en</span> <span className="ml-2 sm:ml-0">nuestros servicios</span></div>
 
   </div>
   <div className=" flex flex-col place-content-center items-center justify-center">
-    <img src="/images/services/op3.png" className="w-[30%] sm:w-full h-[100px] sm:h-[200px] p-2" />
-    <div className="text-[var(--azul-oscuro)] flex flex-col place-content-center items-center justify-center text-lg sm:text-2xl"><span>Servicios de</span> <span className="ml-2 sm:ml-0">alta calidad</span></div>
+    <img src="/images/services/op3.png" className="w-[30%] sm:w-full h-[60px] sm:h-[200px] p-2" />
+    <div className="text-[var(--azul-oscuro)] flex flex-col place-content-center items-center justify-center text-sm sm:text-2xl"><span>Servicios de</span> <span className="ml-2 sm:ml-0">alta calidad</span></div>
 
   </div>
 </div>

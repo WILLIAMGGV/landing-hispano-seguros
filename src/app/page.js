@@ -28,9 +28,11 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-[40%_40%] justify-center gap-4">
         <div className="p-4 rounded flex flex-col place-content-center justify-center items-center">
           <img src="/images/nuestros.png" className="w-[70%] md:w-full" />
-          <div className="text-2xl ml-8 mont-bold text-white p-4 bg-[var(--azul-claro)] shadow-[8px_8px_10px_rgba(0,0,0,0.7)] transition-colors duration-300 ease-in-out cursor-pointer hover:bg-[var(--azul-oscuro)]">
-            Más Información
-          </div>
+          <a href="/services">
+            <div className="text-2xl ml-8 mont-bold text-white p-4 bg-[var(--azul-claro)] shadow-[8px_8px_10px_rgba(0,0,0,0.7)] transition-colors duration-300 ease-in-out cursor-pointer hover:bg-[var(--azul-oscuro)]">
+              Más Información
+            </div>
+          </a>
         </div>
         <AccordionSeguros />
       </div>
