@@ -109,8 +109,8 @@ const Menufixed = () => {
         <div
           className={`sm:hidden bg-[var(--azul-oscuro)] w-full flex flex-col items-center text-white text-lg py-4 space-y-2 transition-all duration-300 transform ${
             open
-              ? "opacity-100 translate-y-0 scale-100"
-              : "opacity-0 -translate-y-5 scale-95 pointer-events-none"
+              ? "block translate-y-0 scale-100"
+              : "hidden -translate-y-5 scale-95 pointer-events-none"
           }`}
         >
           <a href="/"><span onClick={() => { setOpen(false);
