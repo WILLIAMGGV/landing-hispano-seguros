@@ -28,7 +28,7 @@ const Team = () => {
   {
     "id": 3,
     "name": "Jose Humberto Ramirez",
-    "photo": "/images/team/jose1.jpg",
+    "photo": "/images/team/jose11.png",
     "title": "CMO",
     "description": "Liderando nuestros esfuerzos para conectar con ustedes y compartir cómo Hispano Seguros puede proteger lo que más te importa. Especilista en seguros de Salud y Vida.",
     "email": "josehramirez@hispanoseguro.com",
@@ -37,7 +37,7 @@ const Team = () => {
   {
     "id": 4,
     "name": "Mildred Lopez",
-    "photo": "/images/team/mildred1.jpg",
+    "photo": "/images/team/mildred1.png",
     "title": "CEO",
     "description": "Con mas de 9 años de experiencia en el mundo de los seguros. Fundadora de Hispano Seguros, enfocada de servir a nuestra comunidad Hispana en Estados Unidos.",
     "email": "mildredlopez@hispanoseguro.com",
@@ -64,7 +64,7 @@ const Team = () => {
   {
     "id": 7,
     "name": "Isari Pereira",
-    "photo": "/images/team/isarys1.jpg",
+    "photo": "/images/team/isarys1.png",
     "title": "Agente de Seguros",
     "description": "Conocida por su energía y su dedicación a encontrar las mejores opciones en Medicare, así como en seguros de salud y vida. Siempre está dispuesta a ir más allá para garantizar tu cobertura y ayudarte a entender tus beneficios. <strong>¡Descubre cómo Ricardo puede simplificar tus decisiones de Medicare!</strong>",
     "email": "ayuda@hispanoseguro.com",
@@ -91,7 +91,7 @@ const Team = () => {
    {
     "id": 10,
     "name": "Carla Ramirez",
-    "photo": "/images/team/carla1.jpg",
+    "photo": "/images/team/carla1.png",
     "title": "Agente de Seguros",
     "description": "Tu experta en seguros de salud y vida. Su enfoque y conocimiento de nuestros productos la convierten en una aliada invaluable para proteger lo que más te importa. <strong>¡Habla hoy con Sofía para un futuro más seguro!</strong>",
     "email": "ayuda@hispanoseguro.com",
@@ -139,12 +139,12 @@ const obtenerdata = (id, tipo) => {
 
   return (<>
     <div className='flex flex-col mont-regular place-content-center items-center justify-center   leading-none'>
-      <span className='text-[50px] md:text-[180px] text-[var(--azul-oscuro)]'>Conoce</span>
-      <span className='text-[40px] md:text-[90px] text-[var(--azul-oscuro)] mt-[0px] md:mt-[-40px]'>a nuestro equipo</span>
+      <span className='text-[50px] md:text-[100px] 2xl:text-[100px] text-[var(--azul-oscuro)]'>Conoce</span>
+      <span className='text-[40px] md:text-[70px] 2xl:text-[70px] text-[var(--azul-oscuro)] mt-[0px] md:mt-[-25px]'>a nuestro equipo</span>
     </div>
     <br /><br />
     <div className='flex flex-col place-content-center items-center justify-center' >
-    <div className='w-[90%] bg-[#e9e9e9] rounded-4xl flex flex-col p-6 pt-12'>
+    <div className='w-[100%] md:w-[85%] 2xl:w-[80%] bg-[#e9e9e9] rounded-4xl flex flex-col p-6 pt-12'>
     <div className="grid gap-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
   
   <div className="contenedor-imagen cursor-pointer" onClick={() => {
@@ -169,11 +169,11 @@ const obtenerdata = (id, tipo) => {
   </div>
 </div>
 
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  <div className="contenedor-imagen cursor-pointer bg-white"   onClick={() => {
   setModal(true);
   setId(3);
   }}>
-  <img src="/images/team/jose1.jpg" className="imagen" />
+  <img src="/images/team/jose11.png" className="imagen" />
   <div className="overlay"></div>
   <div className="etiqueta-nombre hidden hover:block">
     <span>Jose Humberto Ramirez</span>
@@ -184,11 +184,11 @@ const obtenerdata = (id, tipo) => {
 
 <div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(2, 30%)", justifyContent: "center" }}>
   
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
   setId(4);
   }}>
-  <img src="/images/team/mildred1.jpg" className="imagen" />
+  <img src="/images/team/mildred1.png" className="imagen" />
   
   <div className="overlay"></div>
   
@@ -224,11 +224,11 @@ const obtenerdata = (id, tipo) => {
   </div>
 </div>
 
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
   setId(7);
   }}>
-  <img src="/images/team/isarys1.jpg" className="imagen" />
+  <img src="/images/team/isarys1.png" className="imagen" />
   <div className="overlay"></div>
   <div className="etiqueta-nombre hidden hover:block">
     <span>Isari Pereira</span>
@@ -261,11 +261,11 @@ const obtenerdata = (id, tipo) => {
   </div>
 </div>
 
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
   setId(10);
   }}>
-  <img src="/images/team/carla1.jpg" className="imagen" />
+  <img src="/images/team/carla1.png" className="imagen" />
   <div className="overlay"></div>
   <div className="etiqueta-nombre hidden hover:block">
     <span>Carla Ramirez</span>
@@ -284,7 +284,7 @@ const obtenerdata = (id, tipo) => {
     style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     onClick={() => setModal(false)}
   >
-    <div onClick={(e) => e.stopPropagation()} className="relative bg-white rounded-lg shadow-lg sm:max-w-2xl w-[80%] transform transition-all duration-300 opacity-0 scale-95 animate-fade-in">
+    <div onClick={(e) => e.stopPropagation()} className="relative bg-white rounded-lg shadow-lg sm:w-[60%] w-[80%] transform transition-all duration-300 opacity-0 scale-95 animate-fade-in">
       {/* Modal Header */}
       <button
           onClick={() => setModal(false)}
@@ -300,14 +300,14 @@ const obtenerdata = (id, tipo) => {
   
   {/* Columna 1 - Foto y contacto */}
   <div className="bg-[var(--azul-oscuro)] rounded-t-lg md:rounded-l-lg md:rounded-tr-none p-2">
-    <div className="flex flex-col items-center">
-      <img src={obtenerdata(id, "photo")} width="100%" className="rounded-lg w-[50%] sm:w-full" />
+    <div className="flex flex-col items-center ">
+      <img src={obtenerdata(id, "photo")} width="100%" className="rounded-lg w-[50%] sm:w-full bg-white" />
 
       <div className="flex flex-row mt-4 items-center space-x-2">
         <svg className="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
           <path d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
         </svg>
-        <span className="mont-bold text-[var(--azul-claro)] text-[10px] sm:text-xs">{obtenerdata(id, "phone")}</span>
+        <span className="mont-bold text-[var(--azul-claro)] text-[10px] sm:text-xs md:text-[14px] 2xl:text-[18px]">{obtenerdata(id, "phone")}</span>
       </div>
 
       <div className="flex flex-row items-center mt-0 sm:mt-4 space-x-2">
@@ -315,7 +315,7 @@ const obtenerdata = (id, tipo) => {
           <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
           <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
         </svg>
-        <span className="mont-bold text-[var(--azul-claro)] text-[10px] sm:text-xs">{obtenerdata(id, "email")}</span>
+        <span className="mont-bold text-[var(--azul-claro)] text-[10px] sm:text-xs md:text-[14px] 2xl:text-[18px]">{obtenerdata(id, "email")}</span>
       </div>
     </div>
   </div>
@@ -323,10 +323,10 @@ const obtenerdata = (id, tipo) => {
   {/* Columna 2 - Datos y descripción */}
   <div className="bg-white rounded-b-lg md:rounded-r-lg md:rounded-bl-none p-4 relative">
     <div className="flex flex-col z-30">
-      <span className="mont-bold text-lg sm:text-xl text-[var(--azul-oscuro)]">{obtenerdata(id, "name")}</span>
-      <span className="mont-regular text-md sm:text-lg italic text-[var(--azul-claro)]">{obtenerdata(id, "title")}</span>
+      <span className="mont-bold text-lg sm:text-2xl md:text-[30px] 2xl:text-[34px] text-[var(--azul-oscuro)]">{obtenerdata(id, "name")}</span>
+      <span className="mont-regular text-md sm:text-xl md:text-[24px] 2xl:text-[26px]  italic text-[var(--azul-claro)]">{obtenerdata(id, "title")}</span>
       <br />
-      <p className="mont-regular text-sm sm:text-md text-justify" dangerouslySetInnerHTML={{ __html: obtenerdata(id, "description") }}></p>
+      <p className="mont-regular text-sm sm:text-lg 2xl:text-2xl text-justify" dangerouslySetInnerHTML={{ __html: obtenerdata(id, "description") }}></p>
     </div>
     <img src="/images/logo4.png" style={{ opacity: "0.4" }} className="z-10 absolute bottom-0 right-0 w-[100px] h-[100px] sm:w-[200px] sm:h-[200px]" />
   </div>

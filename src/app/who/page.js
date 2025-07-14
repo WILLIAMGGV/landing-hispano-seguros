@@ -20,15 +20,24 @@ export default function Home() {
       <div className="flex flex-col place-content-center items-center justify-center mont-regular text-[var(--azul-oscuro)]">
         <br />
 
-        <p align="center" className="w-[90%] md:w-[80%] leading-tight text-2xl">
+        <p
+          align="center"
+          className="w-[90%] md:w-[80%] leading-tight text-lg 2xl:text-2xl"
+        >
           <strong>
             Bienvenidos a Hispanoseguros LLC, tu aliado confiable en
           </strong>
         </p>
-        <p align="center" className="w-[90%] md:w-[80%] leading-tight text-2xl">
+        <p
+          align="center"
+          className="w-[90%] md:w-[80%] leading-tight text-lg 2xl:text-2xl"
+        >
           <strong>el complejo mundo de los seguros en Estados Unidos.</strong>
         </p>
-        <p align="center" className="w-[90%] md:w-[60%] leading-tight  text-lg">
+        <p
+          align="center"
+          className="w-[90%] md:w-[60%] leading-tight  text-md md:text-lg "
+        >
           Nos enorgullece ser una agencia comprometida con la comunidad hispana,
           brindando servicios especializados que reflejan nuestra firme
           dedicación a valores esenciales como la integridad, la seguridad, el

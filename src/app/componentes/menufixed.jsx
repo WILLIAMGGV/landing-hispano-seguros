@@ -56,7 +56,7 @@ const Menufixed = () => {
 
           {/* Grupo con hover para submenú */}
           <div className="relative group mx-4 cursor-pointer flex items-center gap-1">
-            <span className="cursor-pointer">Nuestros Servicios</span>
+            <a href="/services"><span className="cursor-pointer">Nuestros Servicios</span></a>
             <ChevronDown
               size={20}
               className="transition-transform duration-300 group-hover:rotate-180"
@@ -137,8 +137,8 @@ const Menufixed = () => {
 
             <div
               className={`transition-all duration-300 overflow-hidden ${
-                subOpen ? "max-h-50 opacity-100" : "max-h-0 opacity-0"
-              } flex flex-col items-center space-y-2 mt-2`}
+                subOpen ? "max-h-[250px] opacity-100" : "max-h-0 opacity-0"
+              } flex flex-col items-center space-y-1 mt-2`}
             >
               <a href="/services#salud"><span className="text-sm" onClick={() => {
                

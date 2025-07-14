@@ -24,10 +24,10 @@ export const Footer = () => {
     {/* Enlaces de navegación */}
     <div className="p-4 text-white text-base mont-regular">
       <div className='flex flex-col items-start space-y-2'>
-        <a href="/"><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Inicio</span></a>
-        <a href="/who"><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Sobre Nosotros</span></a>
-        <a href="/services"><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Nuestros servicios</span></a>
-        <a href=""><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Contacto</span></a>
+        <a href="/" className='transition-all duration-200 hover:scale-105'><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Inicio</span></a>
+        <a href="/who" className='transition-all duration-200 hover:scale-105'><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Sobre Nosotros</span></a>
+        <a href="/services" className='transition-all duration-200 hover:scale-105'><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Nuestros servicios</span></a>
+        <a href="" className='transition-all duration-200 hover:scale-105'><span className="cursor-pointer transition-all duration-200 hover:text-white hover:scale-105">Contacto</span></a>
       </div>
     </div>
 

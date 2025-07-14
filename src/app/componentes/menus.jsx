@@ -16,24 +16,18 @@ export default function Menus() {
           fontSize: "24px",
         }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-[30%_50%] gap-4 w-full place-content-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-[50%] gap-4 w-full place-content-center items-center">
           {/* LOGO */}
-          <div className="p-4 flex flex-row place-content-center justify-center items-center">
-            <img
-              src="/images/logo2.png"
-              className="w-[200px] md:w-full"
-              alt="Logo"
-            />
-          </div>
+          
 
           {/* Texto */}
-          <div className="flex flex-row place-content-center items-center justify-center">
+          <div className="mt-[280px] md:mt-[200px] 2xl:mt-[280px] flex flex-row place-content-center items-center justify-center">
             <div className="p-4 flex flex-col place-content-start justify-start items-start">
-              <span className="text-white text-[24px] md:text-[40px]">
+              <span className="text-white text-[24px] md:text-[40px] 2xl:text-[55px]">
                 Más que Seguros
               </span>
 
-              <span className="text-white text-[28px] md:text-[52px] mt-[-10px] md:mt-[-20px]">
+              <span className="text-white text-[28px] md:text-[52px] 2xl:text-[67px] mt-[-10px] md:mt-[-20px]">
                 Somos tu{" "}
                 <span
                   className="text-[var(--azul-claro)]"
@@ -43,11 +37,11 @@ export default function Menus() {
                 </span>
               </span>
 
-              <span className="text-white text-[32px] md:text-[60px] mt-[-10px] md:mt-[-30px] z-10 relative">
+              <span className="text-white text-[32px] md:text-[60px] 2xl:text-[75px] mt-[-10px] md:mt-[-30px] z-10 relative">
                 En Estados Unidos
               </span>
 
-              <span className="bg-[var(--azul-claro)] text-[10px] md:text-[14px] p-1 rounded-lg mt-[-10px] md:mt-[-20px] relative z-0">
+              <span className="bg-[var(--azul-claro)] text-[10px] md:text-[14px] 2xl:text-[18px] p-1 rounded-lg mt-[-10px] md:mt-[-20px] relative z-0">
                 Conectamos contigo para proteger lo que más importa: tu Salud,
                 tu familia y tu futuro.
               </span>
@@ -55,7 +49,7 @@ export default function Menus() {
           </div>
         </div>
 
-        <div className="mt-[20px] md:mt-[-60px]">
+        <div className="mt-[80px] md:mt-[60px]">
           <img src="/images/flechaabajo.png" width="70px" className="w-[50px] md:w-[70px] animacion-arriba-abajo"  />
         </div>
       </div>

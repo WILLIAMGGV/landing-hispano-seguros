@@ -2,7 +2,8 @@ import React from 'react'
 
 const Services = () => {
   return (<>
-    <div id="salud" className="m-4 md:m-10 mt-[30px]">
+  <div className='flex flex-row place-content-center items-center'>
+    <div id="salud" className="w-[100%] md:w-[80%] m-4 md:m-10 mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[40%_60%] w-full gap-6 items-center">
     
     {/* Imagen */}
@@ -15,7 +16,8 @@ const Services = () => {
     </div>
 
     {/* Texto */}
-    <div className="flex flex-col items-start justify-center space-y-4 md:ml-10">
+    
+    <div className=" flex flex-col items-start justify-center space-y-4 md:ml-10">
       
       <div
         className="bg-[var(--azul-oscuro)] z-20 text-white p-3 md:p-4 text-md md:text-2xl mont-bold rounded-2xl"
@@ -44,12 +46,13 @@ const Services = () => {
       </div>
 
     </div>
+    </div>
   </div>
 </div>
 
 
-
-<div id="vida" className="m-4 md:m-10 flex flex-col place-content-center items-center justify-center mt-[30px]">
+<div className='flex flex-row place-content-center items-center'>
+<div id="vida" className="w-[100%] md:w-[80%] m-4 md:m-10 flex flex-col place-content-center items-center justify-center mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[60%_40%] w-full gap-6 items-center">
 
     {/* Imagen - va primero en mobile */}
@@ -91,9 +94,10 @@ const Services = () => {
     </div>
   </div>
 </div>
+</div>
 
-
-  <div id="auto" className="m-4 md:m-10 mt-[30px]">
+<div className='flex flex-row place-content-center items-center'>
+  <div id="auto" className="w-[100%] md:w-[80%] m-4 md:m-10 mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[40%_60%] w-full gap-6 items-center">
     
     {/* Imagen */}
@@ -130,10 +134,11 @@ const Services = () => {
     </div>
   </div>
 </div>
+</div>
 
 
-
-<div id="dental" className="m-4 md:m-10 flex flex-col place-content-center items-center justify-center mt-[30px]">
+<div className='flex flex-row place-content-center items-center'>
+<div id="dental" className="w-[100%] md:w-[80%] m-4 md:m-10 flex flex-col place-content-center items-center justify-center mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[60%_40%] w-full gap-6 items-center">
 
     {/* Imagen - va primero en mobile */}
@@ -169,9 +174,10 @@ const Services = () => {
     </div>
   </div>
 </div>
+</div>
 
-
-<div id="vision" className="m-4 md:m-10 mt-[30px]">
+<div className='flex flex-row place-content-center items-center'>
+<div id="vision" className="w-[100%] md:w-[80%] m-4 md:m-10 mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[40%_60%] w-full gap-6 items-center">
     
     {/* Imagen */}
@@ -208,10 +214,10 @@ const Services = () => {
     </div>
   </div>
 </div>
+</div>
 
-
-
-<div id="internacional" className="m-4 md:m-10 flex flex-col place-content-center items-center justify-center mt-[30px]">
+<div className='flex flex-row place-content-center items-center'>
+<div id="internacional" className="w-[100%] md:w-[80%] m-4 md:m-10 flex flex-col place-content-center items-center justify-center mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[60%_40%] w-full gap-6 items-center">
 
     {/* Imagen - va primero en mobile */}
@@ -247,12 +253,14 @@ const Services = () => {
     </div>
   </div>
 </div>
+</div>
 
-<div id="gastos" className="m-4 md:m-10 mt-[30px]">
+<div className='flex flex-row place-content-center items-center'>
+<div id="gastos" className="w-[100%] md:w-[80%] m-4 md:m-10 mt-[30px]">
   <div className="grid grid-cols-1 md:grid-cols-[40%_60%] w-full gap-6 items-center">
     
     {/* Imagen */}
-    <div className="w-full">
+    <div className="w-[80%]">
       <img
         src="/images/services/gastos.jpg"
         className="rounded-4xl w-full h-auto"
@@ -284,6 +292,7 @@ const Services = () => {
 
     </div>
   </div>
+</div>
 </div>
 
 </>

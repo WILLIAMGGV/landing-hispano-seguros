@@ -23,14 +23,14 @@ export const Banner2 = () => {
       ¿Por qué elegirnos?
     </div>
 
-    <p className="w-full md:w-[60%] text-base md:text-xl mont-regular text-center mt-4">
+    <p className="w-full md:w-[60%] 2xl:w-[70%] text-base md:text-xl 2xl:text-2xl mont-regular text-center mt-4">
       Ofrecemos soluciones reales pensadas para ti, con un servicio hecho por hispanos para hispanos, basado en una trifecta perfecta de valores: <br />
       <span className="mont-black">confianza, empatía y educación.</span>
     </p>
 
     {/* Métricas */}
     <div className="bg-[rgba(0,0,0,0.7)] rounded-2xl mt-6 md:mt-10 h-auto md:h-[200px] w-full md:w-[80%] flex flex-col md:flex-row items-center justify-center p-6">
-      <div className="grid grid-cols-1 md:grid-cols-[30%_30%_30%] gap-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-[32%_32%_32%] gap-6 w-full">
         {/* Columna 1 */}
         <div ref={ref} className="p-4 text-center rounded-2xl bg-[rgba(29,55,90,0.4)] text-white">
           <div className="flex flex-row items-center justify-center md:justify-start">

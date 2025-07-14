@@ -5,8 +5,8 @@ export const Formcontact2 = () => {
 
     <div className='mt-[80px] flex flex-col place-content-center items-center justify-center ml-[3%] md:ml-[10%] md:mr-[10%] mr-[3%] bg-[#e0e1dd] w-full'>
         <div className='flex flex-col ml-[3%] mr-[3%] md:ml-[10%] md:mr-[10%] text-[#1b263b]'>
-  <span className='text-4xl md:text-7xl mont-black mt-6 md:mt-16'>Para más información</span>
-  <span className='text-lg md:text-2xl mont-regular mt-2'>Déjanos tus consultas y nos comunicaremos contigo a la brevedad.</span>
+  <span className='text-3xl md:text-7xl 2xl:text-7xl mont-black mt-6 md:mt-16'>Para más información</span>
+  <span className='text-md md:text-2xl mont-regular mt-2'>Déjanos tus consultas y nos comunicaremos contigo a la brevedad.</span>
 
   <input
     className="bg-[var(--azul-oscuro)] text-white text-lg md:text-2xl  p-3 mt-2 pl-4"
@@ -59,7 +59,7 @@ export const Formcontact2 = () => {
     </div>
 
      <div className='flex flex-col place-content-center justify-center items-center'>
-        <div   style={{ boxShadow: '5px 5px 6px rgba(0, 0, 0, 0.7)' }} className='bg-[#e0e1dd] hover:bg-[#1b263b] rounded-[6px] p-4 mont-bold hover:text-white cursor-pointer text-[var(--azul-oscuro)] text-xl md:text-3xl mt-3 w-[150px] md:w-[200px] text-center'>
+        <div   style={{ boxShadow: '5px 5px 6px rgba(0, 0, 0, 0.7)' }} className='bg-[#e0e1dd] hover:bg-[#1b263b] rounded-[6px] p-2 md:p-4 mont-bold hover:text-white cursor-pointer text-[var(--azul-oscuro)] text-lg md:text-3xl mt-3 w-[150px] md:w-[200px] text-center'>
             Enviar
         </div>
     </div>
