@@ -260,7 +260,7 @@ const Services = () => {
   <div className="grid grid-cols-1 md:grid-cols-[40%_60%] w-full gap-6 items-center">
     
     {/* Imagen */}
-    <div className="w-[80%]">
+    <div className="w-[80%] md:w-[80%]">
       <img
         src="/images/services/gastos.jpg"
         className="rounded-4xl w-full h-auto"

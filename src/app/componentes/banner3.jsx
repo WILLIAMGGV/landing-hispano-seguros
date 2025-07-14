@@ -11,7 +11,7 @@ export default function Banner3() {
     <>
       {/* Fondo curvo */}
       <div
-        className="relative bg-[#e9e9e9] w-full h-[60vh] md:h-[70vh] 2xl:h-[45vh] mont-bold flex flex-col rounded-b-4xl   shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
+        className="relative bg-[#e9e9e9] w-full h-[70vh] md:h-[70vh] 2xl:h-[45vh] mont-bold flex flex-col rounded-b-4xl   shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
         style={{
           fontSize: "24px",
         }}
