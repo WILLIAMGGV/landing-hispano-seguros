@@ -39,6 +39,9 @@ export const metadata = {
   title: "Hispano Seguros",
   description:
     "Somos una agencia de seguros dedicada a servir a la comunidad hispana en Estados Unidos. Entendemos los desafíos que enfrentan los migrantes al adaptarse a un nuevo sistema de salud. Por eso, ofrecemos una atención personalizada y accesible en su idioma, ayudando a nuestros clientes a proteger a sus familias y su bienestar con la tranquilidad y confianza que merecen. Nuestra misión es ser su apoyo en cada paso del camino, facilitando su integración y bienestar en su nuevo hogar.",
+  icons: {
+    icon: "/icono.png",
+  },
 };
 
 export default function RootLayout({ children }) {

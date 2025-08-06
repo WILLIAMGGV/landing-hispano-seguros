@@ -4,15 +4,15 @@ import React from 'react'
 
 
 
-const Team = () => {
+const Team = ({idioma}) => {
 
   const data = [
   {
     "id": 1,
     "name": "Jonathan Barreto",
     "photo": "/images/team/lider.jpg",
-    "title": "Gerente Operaciones - Oficina Austin",
-    "description": "Enfocado a los detalles, Jonathan es tu experto en seguros de auto y hogar, además de ser un especialista en seguros de salud, vida y Medicare. Se asegura que cada cliente comprenda su cobertura y se sienta completamente protegido. <strong>Si buscas tranquilidad y claridad para tu auto y hogar, contacta a Javier.</strong>",
+    "title": idioma == 'es' ? ('Gerente Operaciones - Oficina Austin') : ('Operations Manager - Austin Office'),
+    "description": idioma == 'es' ? ("Enfocado a los detalles, Jonathan es tu experto en seguros de auto y hogar, además de ser un especialista en seguros de salud, vida y Medicare. Se asegura que cada cliente comprenda su cobertura y se sienta completamente protegido. <strong>Si buscas tranquilidad y claridad para tu auto y hogar, contacta a Javier.</strong>") : ('Focused on details, Jonathan is your expert in auto and home insurance, in addition to being a specialist in health, life and Medicare insurance. Se asegura que cada cliente comprenda su cobertura y se sienta completamente protegido. <strong>If you are looking for peace of mind and clarity for your auto and home, contact Javier.</strong>'),
     "email": "jonathanbarreto@hispanoseguro.com",
     "phone": "(786) 820-5627",
   },
@@ -20,8 +20,8 @@ const Team = () => {
     "id": 2,
     "name": "Johanna Rivero",
     "photo": "/images/team/johanna1.jpg",
-    "title": "Agente de Seguros",
-    "description": "Con una trayectoria sólida en el ámbito de los seguros de salud y vida, Johanna es un asesor confiable para familias y profesionales. Su compromiso con la excelencia aseguran que cada póliza se adapte perfectamente a tus requisitos. Para una protección integral en salud y vida, comunícate con Fernando.",
+    "title": idioma == 'es' ? ("Agente de Seguros") : ("Insurance Agent"),
+    "description": idioma == 'es' ? ('Con una trayectoria sólida en el ámbito de los seguros de salud y vida, Johanna es un asesor confiable para familias y profesionales. Su compromiso con la excelencia aseguran que cada póliza se adapte perfectamente a tus requisitos. Para una protección integral en salud y vida, comunícate con Fernando.') : ('With a solid track record in health and life insurance, Johanna is a trusted advisor for families and professionals. Her commitment to excellence ensures that each policy is perfectly tailored to your requirements. For comprehensive health and life protection, contact Fernando.'),
     "email": "ayuda@hispanoseguro.com",
     "phone": "(512) 851-7728",
   },
@@ -30,7 +30,7 @@ const Team = () => {
     "name": "Jose Humberto Ramirez",
     "photo": "/images/team/jose11.png",
     "title": "CMO",
-    "description": "Liderando nuestros esfuerzos para conectar con ustedes y compartir cómo Hispano Seguros puede proteger lo que más te importa. Especilista en seguros de Salud y Vida.",
+    "description": idioma == 'es' ? ('Liderando nuestros esfuerzos para conectar con ustedes y compartir cómo Hispano Seguros puede proteger lo que más te importa. Especilista en seguros de Salud y Vida.') : ('Leading our efforts to connect with you and share how Hispano Seguros can protect what matters most to you. Specialist in Health and Life insurance.'),
     "email": "josehramirez@hispanoseguro.com",
     "phone": "210-760-7207",
   },
@@ -39,7 +39,7 @@ const Team = () => {
     "name": "Mildred Lopez",
     "photo": "/images/team/mildred1.png",
     "title": "CEO",
-    "description": "Con mas de 9 años de experiencia en el mundo de los seguros. Fundadora de Hispano Seguros, enfocada de servir a nuestra comunidad Hispana en Estados Unidos.",
+    "description": idioma == 'es' ? ('Con mas de 9 años de experiencia en el mundo de los seguros. Fundadora de Hispano Seguros, enfocada de servir a nuestra comunidad Hispana en Estados Unidos.') : ('With more than 9 years of experience in the insurance world. Founder of Hispano Seguros, focused on serving our Hispanic community in the United States.'),
     "email": "mildredlopez@hispanoseguro.com",
     "phone": "(210) 876-3360",
   },
@@ -47,8 +47,8 @@ const Team = () => {
     "id": 5,
     "name": "Carolina Baladi",
     "photo": "/images/team/carolina1.jpg",
-    "title": "Agente de Seguros",
-    "description": "Especialista en seguros de salud y vida. Su empatía y conocimiento técnico la convierten en una aliada invaluable para proteger lo que más te importa.<strong> ¡Habla hoy con Sofía para un futuro más seguro!</strong>",
+    "title": idioma == 'es' ? ('Agente de Seguros') : ('Insurance Agent'),
+    "description": idioma == 'es' ? ('Especialista en seguros de salud y vida. Su empatía y conocimiento técnico la convierten en una aliada invaluable para proteger lo que más te importa.<strong> ¡Habla hoy con Sofía para un futuro más seguro!</strong>') : ('Specialist in health and life insurance. Her empathy and expertise make her an invaluable ally in protecting what matters most to you. <strong>Talk to Sofia today for a more secure future.</strong>'),
     "email": "ayuda@hispanoseguro.com",
     "phone": "(573) 631-9390",
   },
@@ -56,8 +56,8 @@ const Team = () => {
     "id": 6,
     "name": "Ninoska Colmenares",
     "photo": "/images/team/ninoska1.jpg",
-    "title": "Gerente General - Oficina Austin",
-    "description": "Destacandose por su compromiso y su profundo conocimiento en Medicare, además de ser especialista en seguros de salud y vida. Ella te guiará a través de las complejidades de Medicare para asegurar que obtengas la cobertura que necesitas. Deja que Ninoska te ayude a navegar por Medicare y asegurar tu bienestar.",
+    "title": idioma == 'es' ? ('Gerente General - Oficina Austin') : ('General Manager - Austin Office'),
+    "description": idioma == 'es' ? ('Destacandose por su compromiso y su profundo conocimiento en Medicare, además de ser especialista en seguros de salud y vida. Ella te guiará a través de las complejidades de Medicare para asegurar que obtengas la cobertura que necesitas. Deja que Ninoska te ayude a navegar por Medicare y asegurar tu bienestar.') : ('She stands out for her commitment and in-depth knowledge of Medicare, in addition to being a specialist in health and life insurance. She will guide you through the complexities of Medicare to ensure you get the coverage you need. Let Ninoska help you navigate Medicare and ensure your well-being.'),
     "email": "ninoskacolmenares@hispanoseguro.com",
     "phone": "(786) 506-5217",
   },
@@ -65,8 +65,8 @@ const Team = () => {
     "id": 7,
     "name": "Isari Pereira",
     "photo": "/images/team/isarys1.png",
-    "title": "Agente de Seguros",
-    "description": "Conocida por su energía y su dedicación a encontrar las mejores opciones en Medicare, así como en seguros de salud y vida. Siempre está dispuesta a ir más allá para garantizar tu cobertura y ayudarte a entender tus beneficios. <strong>¡Descubre cómo Ricardo puede simplificar tus decisiones de Medicare!</strong>",
+    "title": idioma == 'es' ? ('Agente de Seguros') : ('Insurance Agent'),
+    "description": idioma == 'es' ? ('Conocida por su energía y dedicación para encontrar las mejores opciones en Medicare, así como en seguros de salud y de vida. Siempre dispuesto a hacer un esfuerzo adicional para garantizar su cobertura y ayudarle a entender sus beneficios, ¡descubra cómo Ricardo puede simplificar sus decisiones sobre Medicare!') : ('Known for his energy and dedication to finding the best options in Medicare, as well as health and life insurance. Always willing to go the extra mile to ensure your coverage and help you understand your benefits, find out how Ricardo can simplify your Medicare decisions!'),
     "email": "ayuda@hispanoseguro.com",
     "phone": "(512) 679-1888",
   },
@@ -74,8 +74,8 @@ const Team = () => {
     "id": 8,
     "name": "Omar Rivero",
     "photo": "/images/team/omar1.jpg",
-    "title": "Director General - Oficina Austin",
-    "description": "Omar es un agente apasionado con más de 10 años de experiencia, especialista en seguros de salud, vida y anualidades. Su empatía y conocimiento técnico la convierten en un aliado invaluable para proteger lo que más te importa. <strong> ¡Habla hoy con Omar para un futuro más seguro! </strong>",
+    "title": idioma == 'es' ? ('Director General - Oficina Austin') : ('General Manager - Austin Office'),
+    "description": idioma == 'es' ? ('Omar es un agente apasionado con más de 10 años de experiencia, especialista en seguros de salud, vida y anualidades. Su empatía y conocimiento técnico la convierten en un aliado invaluable para proteger lo que más te importa. ¡Habla hoy con Omar para un futuro más seguro!') : ('Omar is a passionate agent with over 10 years of experience, specializing in health, life and annuity insurance. Her empathy and technical knowledge make her an invaluable ally in protecting what matters most to you. Talk to Omar today for a more secure future!'),
     "email": "omarrivero@hispanoseguro.com",
     "phone": "(512) 966-8764",
   },
@@ -83,8 +83,8 @@ const Team = () => {
     "id": 9,
     "name": "Brigitte Avila",
     "photo": "/images/team/brigitte1.jpg",
-    "title": "Agente de Seguros",
-    "description": "Mariana es una experta en seguros de salud y vida. Entiende las dinámicas cambiantes de la vida y ofrece soluciones flexibles que se adaptan a cada etapa. <strong>¡Descubre cómo Mariana puede simplificar tus decisiones de seguro de salud y vida!</strong>",
+    "title": idioma == 'es' ? ('Agente de Seguros') : ('Insurance Agent'),
+    "description": idioma == 'es' ? ('Mariana es una experta en seguros de salud y vida. Entiende las dinámicas cambiantes de la vida y ofrece soluciones flexibles que se adaptan a cada etapa. <strong>¡Descubre cómo Mariana puede simplificar tus decisiones de seguro de salud y vida!</strong>') : ('Mariana es una experta en seguros de salud y vida. She understands the changing dynamics of life and offers flexible solutions that adapt to every stage - <strong>find out how Mariana can simplify your health and life insurance decisions!</strong>'),
     "email": "ayuda@hispanoseguro.com",
     "phone": "(737) 707-5294",
   },
@@ -92,8 +92,8 @@ const Team = () => {
     "id": 10,
     "name": "Carla Ramirez",
     "photo": "/images/team/carla1.png",
-    "title": "Agente de Seguros",
-    "description": "Tu experta en seguros de salud y vida. Su enfoque y conocimiento de nuestros productos la convierten en una aliada invaluable para proteger lo que más te importa. <strong>¡Habla hoy con Sofía para un futuro más seguro!</strong>",
+    "title": idioma == 'es' ? ('Agente de Seguros') : ('Insurance Agent'),
+    "description": idioma == 'es' ? ('Tu experta en seguros de salud y vida. Su enfoque y conocimiento de nuestros productos la convierten en una aliada invaluable para proteger lo que más te importa. <strong>¡Habla hoy con Sofía para un futuro más seguro!</strong>') : ('Your health and life insurance expert. Her approach and knowledge of our products make her an invaluable ally in protecting what matters most to you. <strong>Talk to Sofia today for a more secure future.</strong>'),
     "email": "ayuda@hispanoseguro.com",
     "phone": "(210) 388-3044",
   },
@@ -139,15 +139,26 @@ const obtenerdata = (id, tipo) => {
 
   return (<>
     <div className='flex flex-col mont-regular place-content-center items-center justify-center   leading-none'>
-      <span className='text-[50px] md:text-[100px] 2xl:text-[100px] text-[var(--azul-oscuro)]'>Conoce</span>
-      <span className='text-[40px] md:text-[70px] 2xl:text-[70px] text-[var(--azul-oscuro)] mt-[0px] md:mt-[-25px]'>a nuestro equipo</span>
+      <span className='text-[50px] md:text-[100px] 2xl:text-[100px] text-[var(--azul-oscuro)]'>{idioma == 'es' ? ('Conoce') : ('Meet')}</span>
+      <span className='text-[40px] md:text-[70px] 2xl:text-[70px] text-[var(--azul-oscuro)] mt-[0px] md:mt-[-25px]'>{idioma == 'es' ? ('a nuestro equipo') : ('our team')}</span>
     </div>
     <br /><br />
     <div className='flex flex-col place-content-center items-center justify-center' >
     <div className='w-[100%] md:w-[85%] 2xl:w-[80%] bg-[#e9e9e9] rounded-4xl flex flex-col p-6 pt-12'>
     <div className="grid gap-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
   
-  <div className="contenedor-imagen cursor-pointer" onClick={() => {
+  <div className="contenedor-imagen cursor-pointer bg-white" onClick={() => {
+  setModal(true);
+  setId(4);
+  }}>
+  <img src="/images/team/mildred1.png" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Mildred Lopez</span>
+  </div>
+</div>
+
+  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
   setId(1);
   }}>
@@ -155,17 +166,6 @@ const obtenerdata = (id, tipo) => {
   <div className="overlay"></div>
   <div className="etiqueta-nombre hidden hover:block">
     <span>Jonathan Barreto</span>
-  </div>
-</div>
-
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
-  setModal(true);
-  setId(2);
-  }}>
-  <img src="/images/team/johanna1.jpg" className="imagen" />
-  <div className="overlay"></div>
-  <div className="etiqueta-nombre hidden hover:block">
-    <span>Johanna Rivero</span>
   </div>
 </div>
 
@@ -186,14 +186,14 @@ const obtenerdata = (id, tipo) => {
   
   <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
-  setId(4);
+  setId(2);
   }}>
-  <img src="/images/team/mildred1.png" className="imagen" />
+  <img src="/images/team/johanna1.jpg" className="imagen" />
   
   <div className="overlay"></div>
   
   <div className="etiqueta-nombre hidden hover:block">
-    <span>Mildred Lopez</span>
+    <span>Johanna Rivero</span>
   </div>
 </div>
 

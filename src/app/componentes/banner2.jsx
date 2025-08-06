@@ -3,7 +3,7 @@ import React from 'react'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
-export const Banner2 = () => {
+export const Banner2 = ({idioma}) => {
    const { ref, inView } = useInView({
     triggerOnce: true, // Solo una vez
     threshold: 0.5,     // Se activa cuando el 50% del componente está visible
@@ -12,7 +12,9 @@ export const Banner2 = () => {
   return (
    <div className="mt-8 relative">
   {/* Imagen de fondo */}
-  <img src="/images/banner2.jpg" className="w-full h-[800px] md:h-auto opacity-80" />
+  <img src="/images/banner2.jpg" className="w-full hidden md:block md:h-auto opacity-80" />
+
+   <img src="/images/banner22.jpg" className="w-full h-[800px] block md:hidden opacity-80" />
 
   {/* Capa gris encima */}
   <div className="absolute top-0 left-0 w-full h-[800px] md:h-full bg-gray-300 opacity-70 z-10"></div>
@@ -20,12 +22,12 @@ export const Banner2 = () => {
   {/* Contenido frontal */}
   <div className="absolute top-0 left-0 w-full h-full z-20 flex flex-col place-content-center items-center justify-center px-4">
     <div className="text-[36px] md:text-[80px] mont-bold text-black text-center leading-tight">
-      ¿Por qué elegirnos?
+      {idioma == 'es' ? ('¿Por qué elegirnos?') : ('Why choose us?')}
     </div>
 
     <p className="w-full md:w-[60%] 2xl:w-[70%] text-base md:text-xl 2xl:text-2xl mont-regular text-center mt-4">
-      Ofrecemos soluciones reales pensadas para ti, con un servicio hecho por hispanos para hispanos, basado en una trifecta perfecta de valores: <br />
-      <span className="mont-black">confianza, empatía y educación.</span>
+     {idioma == 'es' ? ('Ofrecemos soluciones reales pensadas para ti, con un servicio hecho por hispanos para hispanos, basado en una trifecta perfecta de valores:') : ('We offer real solutions designed for you, with a service made by Hispanics for Hispanics, based on a perfect trifecta of values:')}  <br />
+      <span className="mont-black">{idioma == 'es' ? ('confianza, empatía y educación.') : ('trust, empathy and education.')}</span>
     </p>
 
     {/* Métricas */}
@@ -38,7 +40,7 @@ export const Banner2 = () => {
             <span className="mont-bold text-[42px] md:text-[62px] ml-2">{inView ? <CountUp start={1} end={10} duration={2} /> : 1}+</span>
           </div>
           <div className="mt-[-10px] md:mt-[-20px] text-[18px] md:text-[22px] mont-bold text-center md:text-left">
-            Años de Experiencia
+            {idioma == 'es' ? ('Años de Experiencia') : ('Years of Experience')}
           </div>
         </div>
 
@@ -49,7 +51,7 @@ export const Banner2 = () => {
             <span className="mont-bold text-[42px] md:text-[62px] ml-2">{inView ? <CountUp start={1} end={20} duration={3} /> : 1}+</span>
           </div>
           <div className="mt-[-10px] md:mt-[-20px] text-[18px] md:text-[22px] mont-bold text-center md:text-left">
-            Atención en estados
+            {idioma == 'es' ? ('Atención en estados') : ('Attention in states')}
           </div>
         </div>
 
@@ -60,7 +62,7 @@ export const Banner2 = () => {
             <span className="mont-bold text-[42px] md:text-[62px] ml-2">{inView ? <CountUp start={1} end={4000} duration={5} /> : 1}+</span>
           </div>
           <div className="mt-[-10px] md:mt-[-20px] text-[18px] md:text-[22px] mont-bold text-center md:text-left">
-            Clientes felices
+            {idioma == 'es' ? ('Clientes felices') : ('Happy customers')}
           </div>
         </div>
       </div>

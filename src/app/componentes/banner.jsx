@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Menufixed from "./menufixed";
 
-export default function Banner() {
+export default function Banner({idioma}) {
   
 
   return (
@@ -18,13 +18,13 @@ export default function Banner() {
       >
 
         <div className="flex flex-col place-content-center items-center  leading-none">
-            <span className="text-[var(--azul-oscuro)] text-[40px] sm:text-[90px] mt-[30%]">Sobre</span>
-            <span className="text-[var(--azul-oscuro)] text-[60px] sm:text-[150px] mt-[-20px]">Nosotros</span>
+            <span className="text-[var(--azul-oscuro)] text-[40px] sm:text-[90px] mt-[30%]">{idioma == 'es' ? ('Sobre') : ('About')}</span>
+            <span className="text-[var(--azul-oscuro)] text-[60px] sm:text-[150px] mt-[-10px]">{idioma == 'es' ? ('Nosotros') : ('Us')}</span>
         </div>
     
       </div>
       {/* MENÚ fijo encima del fondo */}
-      <Menufixed />
+      <Menufixed idioma={idioma}/>
       {/* Espacio compensatorio para que no tape contenido debajo */}
 
       

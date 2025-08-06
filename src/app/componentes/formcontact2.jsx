@@ -1,24 +1,24 @@
 import React from 'react'
 
-export const Formcontact2 = () => {
+export const Formcontact2 = ({idioma}) => {
   return (<>
 
-    <div className='mt-[80px] flex flex-col place-content-center items-center justify-center ml-[3%] md:ml-[10%] md:mr-[10%] mr-[3%] bg-[#e0e1dd] w-full'>
+   <div className='mt-[80px] flex flex-col place-content-center items-center justify-center ml-[3%] md:ml-[10%] md:mr-[10%] mr-[3%] bg-[#e0e1dd] w-full'>
         <div className='flex flex-col ml-[3%] mr-[3%] md:ml-[10%] md:mr-[10%] text-[#1b263b]'>
-  <span className='text-3xl md:text-7xl 2xl:text-7xl mont-black mt-6 md:mt-16'>Para más información</span>
-  <span className='text-md md:text-2xl mont-regular mt-2'>Déjanos tus consultas y nos comunicaremos contigo a la brevedad.</span>
+  <span className='text-3xl md:text-5xl 2xl:text-7xl mont-black mt-6 md:mt-16'>{idioma == 'es' ? ('Para más información') : ('For more information')}</span>
+  <span className='text-md md:text-2xl mont-regular mt-2'>{idioma == 'es' ? ('Déjanos tus consultas y nos comunicaremos contigo a la brevedad.') : ('Leave us your questions and we will contact you as soon as possible.')}</span>
 
   <input
     className="bg-[var(--azul-oscuro)] text-white text-lg md:text-2xl  p-3 mt-2 pl-4"
     type="text"
-    placeholder="Nombre"
+    placeholder={idioma == 'es' ? ('Nombre') : ('Name')}
     style={{ boxShadow: '10px 10px 6px rgba(0, 0, 0, 0.7)' }}
   />
 
   <input
     className="bg-[var(--azul-oscuro)] text-white text-lg md:text-2xl p-3 mt-4 pl-4"
     type="text"
-    placeholder="Correo"
+    placeholder={idioma == 'es' ? ('Correo Electronico') : ('E-Mail')}
     style={{ boxShadow: '10px 10px 6px rgba(0, 0, 0, 0.7)' }}
   />
 
@@ -26,27 +26,27 @@ export const Formcontact2 = () => {
     className="bg-[var(--azul-oscuro)] text-white text-lg md:text-2xl p-3 mt-4 pl-4"
     style={{ boxShadow: '10px 10px 6px rgba(0, 0, 0, 0.7)' }}
   >
-    <option defaultValue="0">Selecciona un servicio</option>
-    <option value="salud">Seguro de Salud</option>
-  <option value="vida">Seguro de Vida</option>
-  <option value="auto">Seguro de Auto</option>
-  <option value="dental">Seguro Dental</option>
-  <option value="vision">Seguro de Visión</option>
-  <option value="internacional">Seguro Internacional</option>
-  <option value="ultimos-gastos">Seguro de Últimos Gastos</option>
+    <option defaultValue="0">{idioma == 'es' ? ('Selecciona un servicio') : ('Select a service')}</option>
+    <option value="salud">{idioma == 'es' ? ('Seguro de Salud') : ('Health Insurance')}</option>
+  <option value="vida">{idioma == 'es' ? ('Seguro de Vida') : ('Life Insurance')}</option>
+  <option value="auto">{idioma == 'es' ? ('Seguro de Auto') : ('Auto Insurance')}</option>
+  <option value="dental">{idioma == 'es' ? ('Seguro Dental') : ('Dental Insurance')}</option>
+  <option value="vision">{idioma == 'es' ? ('Seguro de Visión') : ('Vision Insurance')}</option>
+  <option value="internacional">{idioma == 'es' ? ('Seguro Internacional') : ('International Insurance')}</option>
+  <option value="ultimos-gastos">{idioma == 'es' ? ('Seguro de Últimos Gastos') : ('Final Expense Insurance')}</option>
   </select>
 
   <input
     className="bg-[var(--azul-oscuro)] text-white text-lg md:text-2xl p-3 mt-4 pl-4"
     type="text"
-    placeholder="Código Postal"
+    placeholder={idioma == 'es' ? ('Código Postal') : ('Zip Code')}
     style={{ boxShadow: '10px 10px 6px rgba(0, 0, 0, 0.7)' }}
   />
 
-  <input
+   <input
     className="bg-[var(--azul-oscuro)] text-white text-lg md:text-2xl p-3 mt-4 pl-4"
     type="text"
-    placeholder="Como deseas que nos comuniquemos contigo"
+    placeholder={idioma == 'es' ? ('Como deseas que nos comuniquemos contigo') : ('How would you like us to contact you?')}
     style={{ boxShadow: '10px 10px 6px rgba(0, 0, 0, 0.7)' }}
   />
   <br />
@@ -60,7 +60,7 @@ export const Formcontact2 = () => {
 
      <div className='flex flex-col place-content-center justify-center items-center'>
         <div   style={{ boxShadow: '5px 5px 6px rgba(0, 0, 0, 0.7)' }} className='bg-[#e0e1dd] hover:bg-[#1b263b] rounded-[6px] p-2 md:p-4 mont-bold hover:text-white cursor-pointer text-[var(--azul-oscuro)] text-lg md:text-3xl mt-3 w-[150px] md:w-[200px] text-center'>
-            Enviar
+            {idioma == 'es' ? ('Enviar') : ('Send')}
         </div>
     </div>
     <br />
