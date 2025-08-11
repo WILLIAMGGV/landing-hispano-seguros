@@ -98,6 +98,16 @@ const Team = ({idioma}) => {
     "phone": "(210) 388-3044",
   },
 
+   {
+    "id": 11,
+    "name": "Leonel Guevara",
+    "photo": "/images/team/leo1.png",
+    "title": idioma == 'es' ? ('COO') : ('COO'),
+    "description": idioma == 'es' ? ('Detrás de un gran equipo, siempre hay alguien que conecta todas las piezas. Siendo el  el puente entre todos nuestros departamentos, garantizando que desde la idea inicial hasta que el producto llega a tus manos, todo funcione de forma coordinada. Es el motor que garantiza que podamos entregarte la mejor experiencia posible, día tras día.') : ('Behind every great team, there is always someone who connects all the pieces. Acting as the bridge between all our departments, ensuring that everything runs smoothly from the initial idea to the moment the product reaches your hands. They are the driving force that guarantees we can deliver the best possible experience, day after day.'),
+    "email": "ayuda@hispanoseguro.com",
+    "phone": "(210) 388-3044",
+  },
+
 
 ]
 
@@ -151,10 +161,59 @@ const obtenerdata = (id, tipo) => {
   setModal(true);
   setId(4);
   }}>
-  <img src="/images/team/mildred1.png" className="imagen" />
+  <img src="/images/team/mildred1.png" className="imagen h-full" />
   <div className="overlay"></div>
   <div className="etiqueta-nombre hidden hover:block">
     <span>Mildred Lopez</span>
+  </div>
+</div>
+
+  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
+  setModal(true);
+  setId(11);
+  }}>
+  <img src="/images/team/leo1.png" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Leonel Guevara</span>
+  </div>
+</div>
+
+  <div className="contenedor-imagen cursor-pointer bg-white"   onClick={() => {
+  setModal(true);
+  setId(3);
+  }}>
+  <img src="/images/team/jose11.png" className="imagen h-full" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Jose Humberto Ramirez</span>
+  </div>
+</div>
+
+</div>
+
+
+<div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
+  
+    <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(8);
+  }}>
+  <img src="/images/team/omar1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Omar Rivero</span>
+  </div>
+</div>
+
+  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
+  setModal(true);
+  setId(6);
+  }}>
+  <img src="/images/team/ninoska1.jpg" className="imagen" />
+  <div className="overlay"></div>
+  <div className="etiqueta-nombre hidden hover:block">
+    <span>Ninoska Colmenares</span>
   </div>
 </div>
 
@@ -169,21 +228,24 @@ const obtenerdata = (id, tipo) => {
   </div>
 </div>
 
-  <div className="contenedor-imagen cursor-pointer bg-white"   onClick={() => {
+
+
+</div>
+
+<div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
+  
+
+  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
-  setId(3);
+  setId(7);
   }}>
-  <img src="/images/team/jose11.png" className="imagen" />
+  <img src="/images/team/isarys1.png" className="imagen" />
   <div className="overlay"></div>
   <div className="etiqueta-nombre hidden hover:block">
-    <span>Jose Humberto Ramirez</span>
+    <span>Isari Pereira</span>
   </div>
 </div>
 
-</div>
-
-<div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(2, 30%)", justifyContent: "center" }}>
-  
   <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
   setModal(true);
   setId(2);
@@ -209,44 +271,11 @@ const obtenerdata = (id, tipo) => {
 </div>
 
 
-</div>
 
-<div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(3, 30%)", justifyContent: "center" }}>
-  
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
-  setModal(true);
-  setId(6);
-  }}>
-  <img src="/images/team/ninoska1.jpg" className="imagen" />
-  <div className="overlay"></div>
-  <div className="etiqueta-nombre hidden hover:block">
-    <span>Ninoska Colmenares</span>
-  </div>
-</div>
-
-  <div className="contenedor-imagen cursor-pointer bg-white"  onClick={() => {
-  setModal(true);
-  setId(7);
-  }}>
-  <img src="/images/team/isarys1.png" className="imagen" />
-  <div className="overlay"></div>
-  <div className="etiqueta-nombre hidden hover:block">
-    <span>Isari Pereira</span>
-  </div>
-</div>
-
-  <div className="contenedor-imagen cursor-pointer"  onClick={() => {
-  setModal(true);
-  setId(8);
-  }}>
-  <img src="/images/team/omar1.jpg" className="imagen" />
-  <div className="overlay"></div>
-  <div className="etiqueta-nombre hidden hover:block">
-    <span>Omar Rivero</span>
-  </div>
-</div>
 
 </div>
+
+
 
 <div className="grid gap-8 mt-8" style={{ gridTemplateColumns: "repeat(2, 30%)", justifyContent: "center" }}>
   
